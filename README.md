@@ -2,11 +2,11 @@
 
 ## Overview
 
-**LOCKERPAL3000** is an IoT-based Smart Locker developed as a college capstone project by a team of four students between **June 2025 and April 2026**.
+**LOCKERPAL3000** is an IoT-based Smart Locker developed as a college capstone project by a team of four students between **June 2025 and April 2026(2 Semesters)**.
 
 The project was created to explore the fundamentals of **Internet of Things (IoT), embedded systems, and software development** while addressing the limitations of traditional lock-and-key storage systems.
 
-> **Note:** This project is an academic prototype built under limited time, funding, and hardware resources. The primary goal was learning and experimentation rather than developing a production-ready system. Some features may require further refinement before real-world deployment.
+> **Note:** This project is an academic prototype built under limited time, funding, hardware resources, and with the help of AI. The primary goal was learning and experimentation rather than developing a production-ready system. Some features may require further refinement before real-world deployment.
 
 ---
 
@@ -37,6 +37,8 @@ The project was created to explore the fundamentals of **Internet of Things (IoT
 ## Project Documentation
 
 The complete project report is **confidential** and cannot be published.
+
+The project's development documentation is not included in this repository, as it contains internal materials that are not intended for public distribution.
 
 This README provides an overview of the project's objectives, implementation scope, and technical design.
 
@@ -111,15 +113,45 @@ The prototype uses entry-level IoT hardware (ESP32 + CP2102). While suitable for
 
 # Hardware
 
-### Main Components
+## Core Components
 
-* ESP32 Development Board
-* RFID Reader
-* Electronic Solenoid Lock
-* Proximity Sensor
-* Buzzer
-* Mobile Application
-* Cloud Database
+- 2 × NodeMCU ESP32 (CP2102 USB)
+- RC522 RFID Module
+- PS-3150 Magnetic Reed Switch
+- INA219 Current Sensor
+- Active Piezo Buzzer (5 V DC)
+- 5V 3A AC-to-DC Power Adapter
+
+## Electronic Components
+
+- IRLZ44N N-Channel MOSFET
+- 1N4007 Rectifier Diode
+- 100 Ω Resistor
+- 100 kΩ Resistor
+- 1000 µF 25 V Electrolytic Capacitors
+
+## Wiring & Prototyping
+
+- Full-size Breadboards
+- Dupont Jumper Wires
+- Stranded Hook-up Wire
+- 2-Pin JST Connector
+- Heat-Shrink Tubing
+- USB to Micro-USB Cable
+
+---
+
+# Software & Technologies
+
+- Flutter SDK
+- Android Studio
+- Visual Studio Code (VS Code)
+- Firebase
+
+---
+
+# UI Design
+[LOCKERPAL300_UI_DESIGN.pdf](https://github.com/user-attachments/files/29386738/LOCKERPAL300_UI_DESIGN.pdf)
 
 ---
 
@@ -131,9 +163,11 @@ The prototype uses entry-level IoT hardware (ESP32 + CP2102). While suitable for
 
 # Physical Prototype
 
-*Images of the completed smart locker prototype will be added here.*
+[PHYSICAL_LOCKERPAL3000.pdf](https://github.com/user-attachments/files/29387152/PHYSICAL_LOCKERPAL3000.pdf)
 
 ---
+# Analytics
+<img width="719" height="446" alt="image" src="https://github.com/user-attachments/assets/d44e4bdf-5240-4897-b8a5-e3b374e5b01f" />
 
 # Future Improvements
 
@@ -145,7 +179,17 @@ The prototype uses entry-level IoT hardware (ESP32 + CP2102). While suitable for
 * Upgrade to industrial-grade hardware for improved reliability
 
 ---
+## Acknowledgements
 
+This project made use of AI-assisted tools during development, primarily for brainstorming, debugging, code explanations, documentation refinement, and general learning. All implementation decisions, integration, testing, and final deliverables were reviewed and completed by the project team.
+
+AI tools used:
+- ChatGPT
+- Copilot
+- Perplexity
+- Research Rabbit
+
+---
 # Educational Purpose
 
 This repository is intended to showcase our learning journey in embedded systems, IoT, and software engineering. While the project demonstrates a functional proof of concept, it is not intended for commercial or production use without further development.
