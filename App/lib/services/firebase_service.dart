@@ -16,7 +16,7 @@ class WeekData {
 class FirebaseService {
   static final FirebaseDatabase database = FirebaseDatabase.instanceFor(
     app: Firebase.app(),
-    databaseURL: "https://lockerpal-3000-default-rtdb.asia-southeast1.firebasedatabase.app",
+    databaseURL: "***databaseURL***",
   );
 
   Stream<bool> lockerStatusStream() {
